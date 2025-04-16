@@ -6,102 +6,122 @@
     <title>Interactive Learning Platform</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', sans-serif;
             margin: 0;
             padding: 0;
-            background: #f9f9f9;
+            background: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #005f73;
+            background: #003049;
             color: white;
-            padding: 20px;
+            padding: 30px 20px;
             text-align: center;
         }
         nav {
-            background: #0a9396;
+            background: #005f73;
+            display: flex;
+            justify-content: center;
             padding: 10px;
-            text-align: center;
         }
         nav a {
             color: white;
-            margin: 0 15px;
             text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #0a9396;
         }
         section {
-            padding: 20px;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
         h2 {
             color: #005f73;
         }
-        .feature-box {
-            background: white;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-left: 5px solid #94d2bd;
-        }
         footer {
+            background: #003049;
+            color: white;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
+        }
+        .button {
+            display: inline-block;
             background: #005f73;
             color: white;
+            padding: 10px 20px;
+            margin-top: 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background: #0a9396;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Interactive Learning Platform</h1>
-        <p>Mathematical Foundations of Computer Science and IT</p>
+        <p>Mathematics & Technology Made Easy and Fun!</p>
     </header>
+
     <nav>
         <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="#content">Content</a>
+        <a href="#topics">Topics</a>
+        <a href="#games">Games</a>
+        <a href="#resources">Resources</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <section id="about">
-        <h2>About the Project</h2>
-        <p>This platform is designed to help students learn abstract mathematical and technological concepts through engaging, interactive, and visual learning tools. It targets high school students, with options to adapt for younger audiences.</p>
+        <h2>About the Platform</h2>
+        <p>This platform helps students understand complex mathematical and technological concepts through engaging lessons, tutorials, games, and challenges. It's designed based on real student feedback to solve problems like motivation, understanding logic, and remembering formulas.</p>
     </section>
 
-    <section id="features">
-        <h2>Key Features</h2>
-        <div class="feature-box">
-            <strong>Interactive Learning:</strong> Quizzes, simulations, step-by-step solutions.
-        </div>
-        <div class="feature-box">
-            <strong>Customization:</strong> Students can track progress and receive personalized feedback.
-        </div>
-        <div class="feature-box">
-            <strong>Gamification:</strong> Includes leaderboards and rewards to encourage practice.
-        </div>
-        <div class="feature-box">
-            <strong>Multimedia:</strong> Incorporates videos, visuals, and practice exercises.
-        </div>
-        <div class="feature-box">
-            <strong>Accessibility:</strong> Simple navigation, mobile and desktop-friendly.
-        </div>
-    </section>
-
-    <section id="content">
-        <h2>Platform Content</h2>
+    <section id="topics">
+        <h2>Explore Topics</h2>
         <ul>
-            <li><strong>Number Systems:</strong> Interactive presentation on binary, decimal, octal, and hexadecimal systems.</li>
-            <li><strong>Logic Algebra:</strong> Step-by-step practice exercises and quizzes.</li>
-            <li><strong>Logic Circuits:</strong> Video tutorials and visual representations of circuits.</li>
-            <li><strong>Algorithmic Structures:</strong> Mini-games to demonstrate concepts.</li>
-            <li><strong>Computer Networks:</strong> Diagrams and animations to visualize connections and protocols.</li>
-            <li><strong>Graphical Programming:</strong> Video and presentation resources.</li>
+            <li><a href="https://www.khanacademy.org/computing/computer-science/cryptography" target="_blank">Number Systems</a> – Learn Binary, Octal, Hexadecimal and how they work in computing.</li>
+            <li><a href="https://www.tutorialspoint.com/digital_circuits/logic_gates.htm" target="_blank">Logic Algebra & Gates</a> – Practice with logic operators and digital circuits.</li>
+            <li><a href="https://scratch.mit.edu" target="_blank">Algorithmic Structures</a> – Try building simple Scratch programs to learn about loops and conditions.</li>
+            <li><a href="https://csunplugged.org/en/topics/network-protocols/" target="_blank">Computer Networks</a> – Discover how the internet and communication protocols work.</li>
+            <li><a href="https://studio.code.org" target="_blank">Graphical Programming</a> – Build drag-and-drop programs and see results instantly.</li>
+        </ul>
+    </section>
+
+    <section id="games">
+        <h2>Games & Quizzes</h2>
+        <p>Test your knowledge with fun, interactive tools!</p>
+        <a href="https://www.quizizz.com" target="_blank" class="button">Take a Quiz</a>
+        <a href="https://www.mathplayground.com/logicgames.html" target="_blank" class="button">Play Logic Games</a>
+        <a href="https://phet.colorado.edu/en/simulations/category/math" target="_blank" class="button">Simulations</a>
+    </section>
+
+    <section id="resources">
+        <h2>Useful Resources</h2>
+        <ul>
+            <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a> – Learn to code interactively.</li>
+            <li><a href="https://photomath.com" target="_blank">Photomath</a> – Get step-by-step math help.</li>
+            <li><a href="https://www.geogebra.org" target="_blank">GeoGebra</a> – Visualize mathematical concepts.</li>
         </ul>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>For more information or feedback, please contact your Digital Design teacher or project supervisor.</p>
+        <p>Project by Zara Čorić, Druga Gimnazija Sarajevo | Supervised by: Kenan Saračević</p>
+        <p>For questions or feedback, email: <a href="mailto:zara@example.com">zara@example.com</a></p>
     </section>
 
     <footer>
-        &copy; 2025 Interactive Learning Platform by Zara Čorić | Druga gimnazija Sarajevo
+        &copy; 2025 Interactive Learning Platform | All Rights Reserved
     </footer>
 </body>
 </html>
